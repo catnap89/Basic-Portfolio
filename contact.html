@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Contact</title>
 </head>
+
 <body>
-  <header>
+
+  <!-- Use CSS to change the style of this header. Make horizontal header with my name and navigation bar-->
+  <header class="header">
+    <!-- Consider using Float left-->
     <h1 class="yourname">
       Youngwoo Cho
     </h1>
+    <!-- Move navigation bar to the right-->
     <ul class="nav">
       <li><a href="index.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </header>
-  <div>
-    <h1>
-      Contact
-    </h1>
-    <p>
-    </p>
-  </div>
-  <footer>
 
+  <!-- Start of the MAIN BODY. Add a box? section? in the main body that contains the content. Probably use float middle-->
+  <section class="mainBody">
+
+      <!--This is where contents will be shown-->
+      <div class="mainContentSection">
+
+        <!-- Title of the content at the top-->
+        <h1 class="title">
+          Contact
+        </h1>
+        <hr class="titleHr">
+        <!-- Name / Email / Message -->
+        <!-- Do not display this code yet <form action="/action_page.php"> -->
+					<label for="fullName">Name</label>
+					<input type="text" id="fullName" name="name" placeholder="John Smith">
+
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="example@gmail.com">
+									
+					<label for="message">Message</label>
+					<textarea id="message" name="message"></textarea>
+			
+					<input type="submit" value="Submit">
+				</form>       
+          
+      </div>
+
+  </section>
+
+  <!-- style of footerHr is different from titleHr-->
+  <hr class="footerHr">
+  <footer>
+    copyright©
   </footer>
+
 </body>
+
 </html>
