@@ -13,30 +13,29 @@
 <body>
 
   <!-- Use CSS to change the style of this header. Make horizontal header with my name and navigation bar-->
-  <header class="header">
-    <!-- Consider using Float left-->
-    <h1 class="yourname">
-      Youngwoo Cho
-    </h1>
-    <!-- Move navigation bar to the right-->
-    <ul class="nav">
-      <li><a href="index.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </header>
+  <div class="header">
+    <a href="index.html" class="logo">Youngwoo Cho</a>
+      <!-- Move navigation bar to the right-->
+    <div class="header-right">
+      <a href="index.html" class="nav">About</a>
+      <a href="portfolio.html" class="nav">Portfolio</a>
+      <a href="contact.html" class="nav">Contact</a>  
+    </div>
+     
+  </div>
+
+
 
   <!-- Start of the MAIN BODY. Add a box? section? in the main body that contains the content. Probably use float middle-->
   <section class="mainBody">
 
       <!--This is where contents will be shown-->
-      <div class="mainContentSection">
+      <div class="container">
 
         <!-- Title of the content at the top-->
         <h1 class="title">
           About Me
         </h1>
-        <hr class="titleHr">
         <!-- Use float in CSS to have the image floating left of the paragraph-->
         <img id="profileImage" src="assets/images/youngwoo_cho_1.jpeg" alt="Photo of Youngwoo Cho" width="480" height="270">
         <p>
@@ -48,8 +47,8 @@
   </section>
 
   <!-- style of footerHr is different from titleHr-->
-  <hr class="footerHr">
-  <footer>
+  
+  <footer class="footer">
     copyright©
   </footer>
 
