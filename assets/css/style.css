@@ -28,6 +28,13 @@
     
 }
 
+.navbar { 
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
 .header-right {
     background-color: blue;
     color: yellow;
@@ -37,21 +44,22 @@
 .mainBody {
     border: 1px solid red;
     height: 1400px;
-    background-image: url("../images/prisim.png");
+    background-image: url("../images/prism.png");
+    background-color: #cccccc;
     
 
 }
 
 
 .container {
-    background-color: cyan;
+    background-color: #ffffff;
     width: 960px;
     position: relative;
     top: 40px;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid black;
-    padding: 50px 30px 50px 30px;
+    border: 1px solid #dddddd;
+    padding: 20px 30px 50px 30px;
     
 }
 
@@ -69,11 +77,29 @@
     color: #4aaaa5;
     font-weight: bold;
     border-bottom: 2px solid #cccccc;
-    background-color: grey;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.content {
+    margin-top: 30px;
+    background-color: black;
+    position: relative;
+    
+}
+
+#profileImage {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777777;
 
 
+}
 /*
 .header a {
     float: left;

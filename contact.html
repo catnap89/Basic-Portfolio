@@ -25,7 +25,7 @@
 	</div>
 
   <!-- Start of the MAIN BODY. Add a box? section? in the main body that contains the content. Probably use float middle-->
-  <section class="mainBody">
+  <div class="mainBody">
 
     <!--This is where contents will be shown-->
     <div class="container">
@@ -34,24 +34,26 @@
       <h1 class="title">
           Contact
       </h1>
-      <hr class="titleHr">
-      <!-- Name / Email / Message -->
-      <!-- Do not display this code yet <form action="/action_page.php"> -->
-			  <label for="fullName">Name</label>
-			  <input type="text" id="fullName" name="name" placeholder="John Smith">
-
-			  <label for="email">Email</label>
-			  <input type="email" id="email" name="email" placeholder="example@gmail.com">
-									
-			  <label for="message">Message</label>
-			  <textarea id="message" name="message"></textarea>
 			
-		    	<input type="submit" value="Submit">
-			</form>       
-          
+			<div class="content">
+				<!-- Do not display this code yet <form action="/action_page.php"> -->
+					<label for="fullName">Name</label>
+					<input type="text" id="fullName" name="name" placeholder="John Smith">
+	
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="example@gmail.com">
+										
+					<label for="message">Message</label>
+					<textarea id="message" name="message"></textarea>
+				
+					<input type="submit" value="Submit">
+				</form>       
+			</div>
+      
+      
     </div>
 
-  </section>
+  </div>
 
   <!-- style of footerHr is different from titleHr-->
   <hr class="footerHr">
