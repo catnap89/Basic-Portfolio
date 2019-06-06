@@ -1,3 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
+    background-color:#ffffff;
+    border-bottom: 1px solid #cccccc;
+    border-color: #cccccc;
+    overflow: hidden;
+    height: 90px;
+    display: flex;
+    justify-content: center;
     
+    
+}
+
+.logo {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+    
+    
+}
+
+.header-right {
+    background-color: blue;
+    color: yellow;
+    
+}
+
+.mainBody {
+    border: 1px solid red;
+    height: 1400px;
+    background-image: url("../images/prisim.png");
+    
+
+}
+
+
+.container {
+    background-color: cyan;
+    width: 960px;
+    position: relative;
+    top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+    padding: 50px 30px 50px 30px;
+    
+}
+
+.displayContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: #4aaaa5;
+    font-weight: bold;
+    border-bottom: 2px solid #cccccc;
+    background-color: grey;
+}
+
+
+
+/*
+.header a {
+    float: left;
+    color: #777777;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+
+  .header a.logo {
+      background-color: #4aaaa5;
+      color:#ffffff;
+      font-size: 32px;
+      font-weight: bold;
+
+  }
+*/
+ 
+
+/*
+.logo {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 35px;
+    float: left;
+    padding: 30px;
+    margin: 0px 0px 0px 150px;
+}
+
+
+.nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+
+}
+*/
+
+.header a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+.footer {
+    background-color: #666666;
+    height: 60px;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #ffffff;
+
 }
