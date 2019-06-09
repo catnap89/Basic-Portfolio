@@ -70,12 +70,12 @@
     padding-right: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
-    position: relative;
+    /* position: relative; */
     
 }
 
-/* Container inside mainBody that stores contents. It is centered inside .mainBody by margin-right: auto; and margin-left: auto;. */
-/* position: relative; is used to have the 40px space between container and the mainBody. */
+
+/* position: relative; is used to have the 40px space between container and the body */
 /* Using margin-top instead causes white bar across the top of the container */
 .container {
     background-color: #ffffff;
@@ -85,30 +85,19 @@
     /* How is it differnt to use width: 100% and max-width: 960px; instead of width: 960px;? */
     /* width: 960px; */
     position: relative;
-    top: 40px;
-
-    /* top: 40px;
-    bottom: 40px; */
-    /* margin: 0 auto; is easier way to center this. */
     margin: 0 auto;
-    /* margin-top: 40px;
-    margin-bottom: 100px; */
+    margin-top: 40px;
+    margin-bottom: 100px; /*THIS GIVES THE BOTTOM SPACE BETWEEN CONTAINER AND BODY. 
+                            BECAUSE OF THE FOOTER'S HEIGHT: 60PX, Need to be more than 60px */
 
     border: 1px solid #dddddd;
     padding: 20px 30px 50px 30px;
     /* clear:both is for incase I will float other elements to arrange where we want them to be.
      clear: both will make sure the container will be cleared if we do the float on previous element */
     clear: both;
+    overflow: hidden; /* Somehow, this made the container in portfolio page to increase to fit the contnets inside */
     
 }
-
-
-/* I think I changed the name of this class to something else?
-
-.displayContainer {
-    
-    
-} */
 
 /* Title of the content inside container.  */
 .title {
@@ -128,11 +117,10 @@
 .content {
     margin-top: 20px;
     background-color: #ffffff;
-   
-        
+            
 }
 
-/* class for image in the "About" page's content. */
+/* class for image in the "About" page's and "Portfolio"'s content. */
 /* float:left used to have the texts flow around right side of the image */
 /* margin-right and margin-bottom used to give some space between the image and texts */
 .profileImage {
@@ -140,7 +128,6 @@
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
-
     float: left;
     /* Why does changing pixel for margin-bottom not affecting the size of the space 
     between the image and the text and the bottom side of the image? */
@@ -158,10 +145,13 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     background-image: url("../images/concrete_seamless.png");
-    height: auto;
+    /* overflow: hidden; */
+    clear: both;
     
     
 }
+
+
 
 
 /* containers image and h3 */
