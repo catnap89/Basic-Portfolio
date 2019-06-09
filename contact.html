@@ -24,39 +24,45 @@
 				 
 	</div>
 
-  <!-- Start of the MAIN BODY. Add a box? section? in the main body that contains the content. Probably use float middle-->
-  <div class="mainBody">
+  
 
-    <!--This is where contents will be shown-->
-    <div class="container">
+    
+	<div class="container">
 
-      <!-- Title of the content at the top-->
-      <h1 class="title">
-          Contact
-      </h1>
+		
+		<h1 class="title">
+				Contact
+		</h1>
+		
+		<div class="content">
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">
+
+			</form>
 			
-			<div class="content">
-				<!-- Do not display this code yet <form action="/action_page.php"> -->
-					<label for="fullName">Name</label>
-					<input type="text" id="fullName" name="name" placeholder="John Smith">
-	
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="example@gmail.com">
-										
-					<label for="message">Message</label>
-					<textarea id="message" name="message"></textarea>
-				
-					<input type="submit" value="Submit">
-				</form>       
-			</div>
-      
-      
-    </div>
+		   
+		</div>
+		
+		
+	</div>
 
-  </div>
+  
 
-  <!-- style of footerHr is different from titleHr-->
-  <hr class="footerHr">
+
   <footer class="footer">
     copyright©
   </footer>

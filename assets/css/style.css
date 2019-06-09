@@ -74,26 +74,31 @@
     
 }
 
-/* .mainBody is the background. Is there a way to have flexible height as I add more contents in it? */
-.mainBody {
-    height: 1400px;
-    background-image: url("../images/concrete_seamless.png");
-    
-}
-
 /* Container inside mainBody that stores contents. It is centered inside .mainBody by margin-right: auto; and margin-left: auto;. */
 /* position: relative; is used to have the 40px space between container and the mainBody. */
 /* Using margin-top instead causes white bar across the top of the container */
 .container {
     background-color: #ffffff;
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    
+    /* How is it differnt to use width: 100% and max-width: 960px; instead of width: 960px;? */
+    /* width: 960px; */
     position: relative;
     top: 40px;
-    /* margin-top: 40px; */
-    margin-right: auto;
-    margin-left: auto;
+
+    /* top: 40px;
+    bottom: 40px; */
+    /* margin: 0 auto; is easier way to center this. */
+    margin: 0 auto;
+    /* margin-top: 40px;
+    margin-bottom: 100px; */
+
     border: 1px solid #dddddd;
     padding: 20px 30px 50px 30px;
+    /* clear:both is for incase I will float other elements to arrange where we want them to be.
+     clear: both will make sure the container will be cleared if we do the float on previous element */
+    clear: both;
     
 }
 
@@ -101,10 +106,7 @@
 /* I think I changed the name of this class to something else?
 
 .displayContainer {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-wrap: wrap;
+    
     
 } */
 
@@ -124,46 +126,122 @@
 /* Not sure position: relative was used. But I think I used it before trying margin-top: 30px; in attempt to move the .content 
     little bit below to make space between .title and .content. */
 .content {
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #ffffff;
-    /* position: relative; */
-    border: 1px solid blue;
+   
         
 }
 
 /* class for image in the "About" page's content. */
 /* float:left used to have the texts flow around right side of the image */
 /* margin-right and margin-bottom used to give some space between the image and texts */
-#profileImage {
+.profileImage {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+
     float: left;
-    margin-right: 10px;
+    /* Why does changing pixel for margin-bottom not affecting the size of the space 
+    between the image and the text and the bottom side of the image? */
+    /* margin-right: 20px;
+    margin-bottom: 5px; */
+    
+}
+
+
+
+/* the above css rule with p tag is replaced by below body css rule */
+body {
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/concrete_seamless.png");
+    height: auto;
+    
+    
+}
+
+
+/* containers image and h3 */
+.portfolio {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+.portfolio img {
+    width: 100%;
+    border: 0 none;
+    /* opacity: .8; */
+  
+
+}
+
+.portfolio:nth-child(even) {
+    margin-right: 40px;
+}
+
+.portfolio h3 {
+    border-bottom: 0;
+    background: #4aaaa5; /* What is the difference between background and background-color? */
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0; /* Does this even change anything? */
+    font-weight: 300;
+
+
+}
+
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
     margin-bottom: 10px;
 }
 
-/* Texts inside .content */
-p {
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+
 
 }
 
-/* Links with image relavant to each links */
-.portfolio {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 1px solid red;
+textarea {
     height: 200px;
-    width: 200px;
 }
 
-/* Container that contains .portfolio links */
-/* How is this different from .content? Why did I make the <div class="portfolio-container"> ?*/
-/* I think I made this for future proofing when there might be other type contents in the .content. But I don't think it was necessary for now. */
-/* .portfolio-container {
-    border: 1px solid red;
+input[type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
 
-} */
 
+}
 
 .header a:hover {
     background-color: #dddddd;
