@@ -95,7 +95,7 @@
     /* clear:both is for incase I will float other elements to arrange where we want them to be.
      clear: both will make sure the container will be cleared if we do the float on previous element */
     clear: both;
-    overflow: hidden; /* Somehow, this made the container in portfolio page to increase to fit the contnets inside */
+    overflow: hidden; /*Somehow, this made the container in portfolio page to increase to fit the contnets inside */
     
 }
 
@@ -124,7 +124,7 @@
 /* float:left used to have the texts flow around right side of the image */
 /* margin-right and margin-bottom used to give some space between the image and texts */
 .profileImage {
-    width: 200px;
+    width: 274px;
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
@@ -160,7 +160,7 @@ body {
     overflow: auto;
     position: relative;
     float: left;
-    margin: 20px 0 25px;
+    margin: 0 0 25px;
 }
 
 .portfolio img {
