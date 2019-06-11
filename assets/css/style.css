@@ -248,3 +248,7 @@ input[type=submit] {
     color: #ffffff;
 
 }
+
+.footer p {
+    font-size: 10px;
+}
