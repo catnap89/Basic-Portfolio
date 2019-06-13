@@ -124,7 +124,7 @@
 /* float:left used to have the texts flow around right side of the image */
 /* margin-right and margin-bottom used to give some space between the image and texts */
 .profileImage {
-    width: 274px;
+    width: 200px;
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
@@ -166,6 +166,7 @@ body {
 .portfolio img {
     width: 100%;
     border: 0 none;
+    height: 200px;
     /* opacity: .8; */
   
 
