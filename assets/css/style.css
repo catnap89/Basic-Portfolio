@@ -234,9 +234,14 @@ input[type=submit] {
 
 }
 
-.header a:hover {
-    background-color: #dddddd;
-    color: black;
+.header .logo:hover {
+    background-color: teal;
+    /* color: black; */
+}
+
+.nav:hover {
+    background-color: #ddd;
+
 }
 .footer {
     background-color: #666666;
